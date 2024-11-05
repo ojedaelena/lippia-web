@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>io.lippia</groupId>
 		<artifactId>root</artifactId>
-		<version>3.3.0.2</version>
+		<version>3.3.0.3</version>
 	</parent>
 
 	<groupId>Lippia-Web-Example-Project</groupId>
@@ -123,7 +123,7 @@
 		<dependency>
 			<groupId>io.lippia</groupId>
 			<artifactId>core</artifactId>
-			<version>3.3.0.2</version>
+			<version>3.3.0.3</version>
 		</dependency>
 		<dependency>
 			<groupId>io.lippia.report</groupId>
@@ -167,9 +167,8 @@
 
 	<repositories>
 		<repository>
-			<id>crowdarRepo</id>
-			<name>crowdar-repository</name>
-			<url>https://nexus-v3-repositories.automation.crowdaronline.com/repository/maven-public/</url>
+			<id>central</id>
+			<url>https://repo.maven.apache.org/maven2</url>
 		</repository>
 	</repositories>
 

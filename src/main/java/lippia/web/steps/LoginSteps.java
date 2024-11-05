@@ -12,33 +12,7 @@ public class LoginSteps extends PageSteps {
         LandingService.navegarWeb();
     }
 
-    @When("The user click on 'Log In'")
-    public void theUserClickOnLogIn() {
-        LandingService.clickOnLogIn();
-    }
-
-    @And("Click on 'Log In manually'")
-    public void clickOnLogInManually() {
-        LogInService.logInManually();
-    }
-
-    @And("Set the email {string}")
-    public void setTheEmail(String email) {
-        LogInService.setTheEmail( email );
-    }
-
-    @And("Set the password {string}")
-    public void setThePassword(String password) {
-        LogInService.setThePassword( password );
-    }
-
-    @And("Click on 'Log In' button")
-    public void clickOnButtonLogIn() {
-        LogInService.buttonLogIn();
-    }
-
-
-    @When("^The user login with credentials email (.*) and password (.*)$")
+    @And("^The user login with credentials email (.*) and password (.*)$")
     public void login(String email, String password) {
         LandingService.clickOnLogIn();
         LogInService.logInManually();
@@ -47,10 +21,4 @@ public class LoginSteps extends PageSteps {
         LogInService.buttonLogIn();
     }
 
-
-    @Then("The user verify the login page is displayed")
-    public void theUserVerifyTheLoginPageIsDisplayed() {
-        LogInService.verifyMessageLoginPage();
-        LogInService.verifyUrlLoginPage("https://app.clockify.me/en/login");
-    }
 }
